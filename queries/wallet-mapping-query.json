@@ -1,0 +1,1 @@
+{"sqlQuery": {"sql": "SELECT\n    l1_sender as evm_address,\n    ARRAY_AGG(DISTINCT(l2_receiver)) as fuel_address\nFROM account_mapping\nGROUP BY l1_sender;", "size": 10000}}
